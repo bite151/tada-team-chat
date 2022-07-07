@@ -90,7 +90,7 @@ export default defineComponent({
     )
 
     watch(
-      () => _.cloneDeep(route.params.room), (val) => {
+      () => _.cloneDeep(route.params.room), () => {
         if (messageInput.value) {
           messageInput.value.focus()
         }
